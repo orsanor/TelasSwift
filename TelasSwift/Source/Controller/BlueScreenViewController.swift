@@ -12,13 +12,20 @@ class BlueScreenViewController: UIViewController {
     
     var viewMain = BlueScreenView()
     
+    lazy var blueScreenView: BlueScreenView = {
+        let blueScreenView = BlueScreenView()
+       
+        return blueScreenView
+    }()
+
     override func loadView() {
-        self.view = viewMain
+        self.view = blueScreenView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "teste"
+        self.title = "Tela Azul"
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
 }

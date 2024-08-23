@@ -18,6 +18,12 @@
 		A4DBAD372C78C1A200F23A83 /* BlueScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DBAD362C78C1A200F23A83 /* BlueScreenView.swift */; };
 		A4DBAD392C78C1AF00F23A83 /* BlueScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DBAD382C78C1AF00F23A83 /* BlueScreenViewController.swift */; };
 		A4DBAD3B2C78C79700F23A83 /* GreenScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DBAD3A2C78C79700F23A83 /* GreenScreenView.swift */; };
+		A4EE77252C78CBC1004BE601 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE77242C78CBC1004BE601 /* UIColor.swift */; };
+		A4EE77272C78CE94004BE601 /* GreenScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE77262C78CE93004BE601 /* GreenScreenViewController.swift */; };
+		A4EE77292C78CEBF004BE601 /* GreenScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE77282C78CEBF004BE601 /* GreenScreenCoordinator.swift */; };
+		A4EE772B2C78CFAB004BE601 /* RedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE772A2C78CFAB004BE601 /* RedScreenView.swift */; };
+		A4EE772D2C78CFB8004BE601 /* RedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE772C2C78CFB8004BE601 /* RedScreenViewController.swift */; };
+		A4EE772F2C78CFC5004BE601 /* RedScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE772E2C78CFC5004BE601 /* RedScreenCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		A4DBAD362C78C1A200F23A83 /* BlueScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueScreenView.swift; sourceTree = "<group>"; };
 		A4DBAD382C78C1AF00F23A83 /* BlueScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueScreenViewController.swift; sourceTree = "<group>"; };
 		A4DBAD3A2C78C79700F23A83 /* GreenScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenScreenView.swift; sourceTree = "<group>"; };
+		A4EE77242C78CBC1004BE601 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A4EE77262C78CE93004BE601 /* GreenScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenScreenViewController.swift; sourceTree = "<group>"; };
+		A4EE77282C78CEBF004BE601 /* GreenScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenScreenCoordinator.swift; sourceTree = "<group>"; };
+		A4EE772A2C78CFAB004BE601 /* RedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedScreenView.swift; sourceTree = "<group>"; };
+		A4EE772C2C78CFB8004BE601 /* RedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedScreenViewController.swift; sourceTree = "<group>"; };
+		A4EE772E2C78CFC5004BE601 /* RedScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedScreenCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +78,8 @@
 		A4DBAD172C78BC4600F23A83 /* TelasSwift */ = {
 			isa = PBXGroup;
 			children = (
-				A4DBAD3C2C78C9FD00F23A83 /* Extensions */,
 				A4DBAD262C78BC4800F23A83 /* Info.plist */,
+				A4DBAD3C2C78C9FD00F23A83 /* Extensions */,
 				A4DBAD2E2C78BD0000F23A83 /* Resource */,
 				A4DBAD2F2C78BD2500F23A83 /* Source */,
 			);
@@ -101,6 +113,8 @@
 			children = (
 				A4DBAD322C78C0AE00F23A83 /* Coordinator.swift */,
 				A4DBAD342C78C0C800F23A83 /* BlueScreenCoordinator.swift */,
+				A4EE77282C78CEBF004BE601 /* GreenScreenCoordinator.swift */,
+				A4EE772E2C78CFC5004BE601 /* RedScreenCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -111,6 +125,9 @@
 				A4DBAD362C78C1A200F23A83 /* BlueScreenView.swift */,
 				A4DBAD382C78C1AF00F23A83 /* BlueScreenViewController.swift */,
 				A4DBAD3A2C78C79700F23A83 /* GreenScreenView.swift */,
+				A4EE77262C78CE93004BE601 /* GreenScreenViewController.swift */,
+				A4EE772A2C78CFAB004BE601 /* RedScreenView.swift */,
+				A4EE772C2C78CFB8004BE601 /* RedScreenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -118,6 +135,7 @@
 		A4DBAD3C2C78C9FD00F23A83 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A4EE77242C78CBC1004BE601 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,11 +213,17 @@
 			files = (
 				A4DBAD372C78C1A200F23A83 /* BlueScreenView.swift in Sources */,
 				A4DBAD332C78C0AE00F23A83 /* Coordinator.swift in Sources */,
+				A4EE77272C78CE94004BE601 /* GreenScreenViewController.swift in Sources */,
 				A4DBAD392C78C1AF00F23A83 /* BlueScreenViewController.swift in Sources */,
+				A4EE772B2C78CFAB004BE601 /* RedScreenView.swift in Sources */,
 				A4DBAD1D2C78BC4600F23A83 /* ViewController.swift in Sources */,
+				A4EE77252C78CBC1004BE601 /* UIColor.swift in Sources */,
+				A4EE77292C78CEBF004BE601 /* GreenScreenCoordinator.swift in Sources */,
 				A4DBAD3B2C78C79700F23A83 /* GreenScreenView.swift in Sources */,
 				A4DBAD192C78BC4600F23A83 /* AppDelegate.swift in Sources */,
+				A4EE772D2C78CFB8004BE601 /* RedScreenViewController.swift in Sources */,
 				A4DBAD1B2C78BC4600F23A83 /* SceneDelegate.swift in Sources */,
+				A4EE772F2C78CFC5004BE601 /* RedScreenCoordinator.swift in Sources */,
 				A4DBAD352C78C0C800F23A83 /* BlueScreenCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
