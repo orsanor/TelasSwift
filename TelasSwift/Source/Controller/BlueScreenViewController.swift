@@ -8,13 +8,19 @@
 import Foundation
 import UIKit
 
-class BlueScreenViewController: UIViewController {
+class BlueScreenViewController: ViewControllerDefault {
     
+    var toGreenTap: (() -> Void)?
+
     var viewMain = BlueScreenView()
     
     lazy var blueScreenView: BlueScreenView = {
         let blueScreenView = BlueScreenView()
        
+        blueScreenView.toGreenTap = {
+            self.toGreenTap?()
+        }
+                
         return blueScreenView
     }()
 
@@ -25,7 +31,6 @@ class BlueScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Tela Azul"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
 }

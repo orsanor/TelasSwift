@@ -19,5 +19,24 @@ class GreenScreenCoordinator: Coordinator {
     func start(){
         let viewController = GreenScreenViewController()
         self.navigationController.pushViewController(viewController, animated: true)
+        
+        viewController.toRedTap = {
+            self.goToRedTap()
+        }
+        
+        viewController.toBlueTap = {
+            self.goToBlueTap()
+        }
     }
+    
+    func goToRedTap() {
+        let coordinator = RedScreenCoordinator(navigationController: navigationController)
+        coordinator.start()
+    }
+    
+    func goToBlueTap() {
+        let coordinator = BlueScreenCoordinator(navigationController: navigationController)
+        coordinator.start()
+    }
+
 }

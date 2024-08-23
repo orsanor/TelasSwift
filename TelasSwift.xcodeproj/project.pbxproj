@@ -24,6 +24,8 @@
 		A4EE772B2C78CFAB004BE601 /* RedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE772A2C78CFAB004BE601 /* RedScreenView.swift */; };
 		A4EE772D2C78CFB8004BE601 /* RedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE772C2C78CFB8004BE601 /* RedScreenViewController.swift */; };
 		A4EE772F2C78CFC5004BE601 /* RedScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE772E2C78CFC5004BE601 /* RedScreenCoordinator.swift */; };
+		A821DBA52C79464F00F9A968 /* buttonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821DBA42C79464F00F9A968 /* buttonDefault.swift */; };
+		A821DBA72C794C6600F9A968 /* viewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821DBA62C794C6500F9A968 /* viewControllerDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		A4EE772A2C78CFAB004BE601 /* RedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedScreenView.swift; sourceTree = "<group>"; };
 		A4EE772C2C78CFB8004BE601 /* RedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedScreenViewController.swift; sourceTree = "<group>"; };
 		A4EE772E2C78CFC5004BE601 /* RedScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedScreenCoordinator.swift; sourceTree = "<group>"; };
+		A821DBA42C79464F00F9A968 /* buttonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonDefault.swift; sourceTree = "<group>"; };
+		A821DBA62C794C6500F9A968 /* viewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +82,9 @@
 		A4DBAD172C78BC4600F23A83 /* TelasSwift */ = {
 			isa = PBXGroup;
 			children = (
-				A4DBAD262C78BC4800F23A83 /* Info.plist */,
-				A4DBAD3C2C78C9FD00F23A83 /* Extensions */,
 				A4DBAD2E2C78BD0000F23A83 /* Resource */,
 				A4DBAD2F2C78BD2500F23A83 /* Source */,
+				A4DBAD262C78BC4800F23A83 /* Info.plist */,
 			);
 			path = TelasSwift;
 			sourceTree = "<group>";
@@ -102,6 +105,8 @@
 		A4DBAD2F2C78BD2500F23A83 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A821DBA32C79463F00F9A968 /* Infrastructure */,
+				A4DBAD3C2C78C9FD00F23A83 /* Extensions */,
 				A4DBAD312C78C05E00F23A83 /* Controller */,
 				A4DBAD302C78C05200F23A83 /* Coordinator */,
 			);
@@ -138,6 +143,15 @@
 				A4EE77242C78CBC1004BE601 /* UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A821DBA32C79463F00F9A968 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A821DBA42C79464F00F9A968 /* buttonDefault.swift */,
+				A821DBA62C794C6500F9A968 /* viewControllerDefault.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +227,7 @@
 			files = (
 				A4DBAD372C78C1A200F23A83 /* BlueScreenView.swift in Sources */,
 				A4DBAD332C78C0AE00F23A83 /* Coordinator.swift in Sources */,
+				A821DBA52C79464F00F9A968 /* buttonDefault.swift in Sources */,
 				A4EE77272C78CE94004BE601 /* GreenScreenViewController.swift in Sources */,
 				A4DBAD392C78C1AF00F23A83 /* BlueScreenViewController.swift in Sources */,
 				A4EE772B2C78CFAB004BE601 /* RedScreenView.swift in Sources */,
@@ -220,6 +235,7 @@
 				A4EE77252C78CBC1004BE601 /* UIColor.swift in Sources */,
 				A4EE77292C78CEBF004BE601 /* GreenScreenCoordinator.swift in Sources */,
 				A4DBAD3B2C78C79700F23A83 /* GreenScreenView.swift in Sources */,
+				A821DBA72C794C6600F9A968 /* viewControllerDefault.swift in Sources */,
 				A4DBAD192C78BC4600F23A83 /* AppDelegate.swift in Sources */,
 				A4EE772D2C78CFB8004BE601 /* RedScreenViewController.swift in Sources */,
 				A4DBAD1B2C78BC4600F23A83 /* SceneDelegate.swift in Sources */,

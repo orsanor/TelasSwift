@@ -8,17 +8,31 @@
 import Foundation
 import UIKit
 
-class GreenScreenViewController: UIViewController {
+class GreenScreenViewController: ViewControllerDefault {
+    var toBlueTap: (() -> Void)?
+    var toRedTap: (() -> Void)?
     
-    var viewMain = GreenScreenView()
+    lazy var greenScreenView: GreenScreenView = {
+        let greenScreenView = GreenScreenView()
+       
+        greenScreenView.toBlueTap = {
+            self.toBlueTap?()
+        }
+        
+        greenScreenView.toRedTap = {
+            self.toRedTap?()
+        }
+        
+        return greenScreenView
+    }()
+
     
     override func loadView() {
-        self.view = viewMain
+        self.view = greenScreenView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Tela Verde"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
